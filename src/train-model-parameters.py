@@ -21,7 +21,7 @@ def main(args):
     # train model
     model = train_model(args.reg_rate, X_train, X_test, y_train, y_test)
 
-    # evaluate model
+    # evaluate model Yogi
     metrics = eval_model(model, X_test, y_test)
 
     # persist metrics so the workflow can comment the actual values deterministically
